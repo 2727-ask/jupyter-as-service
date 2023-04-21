@@ -10,6 +10,8 @@ LABEL maintainer="Ashutosh Kumbhar<ashutoshkumbhar27@gmail.com>"
 # Fix: https://github.com/koalaman/shellcheck/wiki/SC3014
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+VOLUME ["/prometheus"]
+
 USER root
 
 # Install all OS dependencies for notebook server that starts but lacks all
