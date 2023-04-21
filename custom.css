@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root {
+    --bg-color: #171923;
+    --bg-light: #232535;
+    --bg-danger: #dc3545;
+    --font-color: #c5cddb;
+    /* --font-light: #ffffff; */
+    --font-light: var(--theme-primary);
+    --theme-primary: #dcbc65;
+}
+
+
+*{
+   font-family: 'Poppins', sans-serif; 
+}
+
+#site {
+  width: 100%;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: auto;
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Poppins', sans-serif; 
+   color: var(--font-color) !important;
+}
+
+
+
+p, label{
+   font-family: 'Poppins', sans-serif;
+   color: var(--font-color) !important;
+}
+
+a{
+    color: #dcbc65;
+}
+
+.btn-default {
+  color:  var(--theme-primary);
+  background-color: var(--bg-color);
+  border-color: var(--theme-primary);
+}
+
+
+input[type="checkbox"], input[type="radio"]:checked {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: var(--theme-primary) !important;
+  background: var(--theme-primary) !important;
+}
+
+.navbar-default {
+	background-color: var(--bg-color);
+	border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: var(--font-color);
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: var(--theme-primary);
+}
+
+#kernel_indicator {
+  color: var(--theme-primary) !important;
+  text-align: center;
+}
+
+
+
+
+.tab-pane{
+    color: var(--font-color) !important;
+}
+
+body{
+    background-color:var(--bg-color);
+}
+
+#header{
+    background-color:#000000 !important;
+}
+
+.list_header{
+    background-color: #000000;
+}
+
+#kernel_indicator .kernel_indicator_name {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: var(--theme-primary);
+}
+
+#running .panel-group .panel .panel-heading {
+  background-color: #000000;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 22px;
+}
+
+#running .panel-group .panel .panel-body {
+  background-color:var(--bg-color);  
+  padding: 0px;
+}
+
+#ipython_notebook::before {
+    padding-top: 7px;
+    content: "LAAS"
+}
+
+#ipython_notebook img {
+    display: none;
+}
+
+#ipython_notebook::before{
+  padding-top: 7px;
+ content:"Lab As A Service";
+ font-family: 'Poppins', sans-serif;
+ font-weight: 700;
+ color: var(--theme-primary);
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: var(--bg-color);
+	cursor: default;
+	background-color: #dcbc65;
+	border: 1px solid #dcbc65;
+	border-bottom-color: transparent;
+}
+
+#shutdown {
+  color: #dcbc65;
+  background-color: #000000;
+  border-color: #dcbc65;
+  margin-left: 10px;
+}
+
+#shutdown:hover{
+  color: #ffffff; 
+  background-color: var(--bg-danger); 
+  border-color: var(--bg-danger); 
+  margin-left: 10px;
+    
+}
+
+span.save_widget span.filename {
+  height: 100%;
+  line-height: 1em;
+  margin-left: 16px;
+  border: none;
+  font-size: 146.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 2px;
+  color: beige;
+  padding-top: 4px;
+  background: #000;
+}
+
+span.checkpoint_status, span.autosave_status {
+	font-size: small;
+	white-space: nowrap;
+	padding: 4px 5px;
+	color: beige;
+}
+
+#notebook-container {
+	padding: 15px;
+	background-color: #000;
+	min-height: 0;
+	-webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+	box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+
+div.input_prompt {
+	color: var(--theme-primary) !important;
+	border-top: 1px solid transparent;
+}
+
+div.output_area pre {
+  margin: 0;
+  padding: 1px 0 1px 0;
+  border: 0;
+  vertical-align: baseline;
+  color: var(--theme-primary);
+  background-color: transparent;
+  border-radius: 0;
+}
+
+a:hover, a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.dynamic-instructions{
+   color: var(--font-color); 
+}
+
+
+.toolbar-inner{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
